@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WRC Bodovací Aplikace</title>
+  
+  <link rel="stylesheet" href="./css/ap.css">
+</head>
+<body>
+  <header>
+    <h1>WRC Bodovací Aplikace</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Přidat jezdce a výsledky</h2>
+      <form id="add-driver-form">
+        <label for="driver-name">Jméno jezdce:</label>
+        <input type="text" id="driver-name" required>
+        
+        <label for="saturday-position">Pozice po sobotě:</label>
+        <select id="saturday-position">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        
+        <label for="sunday-position">Pozice v neděli:</label>
+        <select id="sunday-position">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+        
+        <label for="power-stage-position">Pozice v Power Stage:</label>
+        <select id="power-stage-position">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        
+        <button type="submit">Přidat jezdce</button>
+      </form>
+    </section>
+    
+    <section>
+      <h2>Celkové Body</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Jezdec</th>
+            <th>Body po sobotě</th>
+            <th>Body za neděli</th>
+            <th>Body z Power Stage</th>
+            <th>Celkové Body</th>
+          </tr>
+        </thead>
+        <tbody id="results-table-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="ap.js"></script>
+</body>
+</html>
