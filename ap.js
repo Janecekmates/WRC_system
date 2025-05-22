@@ -1,6 +1,6 @@
 
-const pointsSaturday = [18, 15, 13, 10, 8, 6, 4, 3, 2, 1];
-const pointsSunday = [7, 6, 5, 4, 3, 2, 1];
+const pointsSaturday = [25, 17, 15, 12, 10, 8, 6, 4, 2, 1];
+const pointsSunday = [5, 4, 3, 2, 1];
 const pointsPowerStage = [5, 4, 3, 2, 1];
 
 const drivers = [];
